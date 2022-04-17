@@ -33,12 +33,15 @@ class reverseLinkedList:
                     temp = temp.next
 
     def reverseList(self):
-        temp = self.head
+        current = self.head
         prev = None
-        while(temp):
-            if temp.next == None:
-                prv = temp
-                temp.next = prev
+        while(current != None):
+            temp = current.next
+            current.next = prev
+            prev = current
+            current = temp
+
+        self.head = prev
 
     
     def printAll(self):
@@ -57,4 +60,6 @@ r.add_front(1)
 r.add_front(65)
 r.add_back(65)
 r.add_back(65)
+r.printAll()
+r.reverseList()
 r.printAll()

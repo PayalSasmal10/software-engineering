@@ -1,0 +1,1 @@
+# fasad- a single class reprsent the entire subsystem

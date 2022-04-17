@@ -1,0 +1,1 @@
+# add responsibilities to objects dynamically
